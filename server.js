@@ -23,6 +23,8 @@ io.on('connection', Socket =>
 {
     console.log(`socket conectados: ${Socket.id}`);
 
+    Socket.emit('previousMessages', messages);
+
     Socket.on('sendMessage', data =>
     {
         messages.push(data);

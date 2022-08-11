@@ -29,6 +29,14 @@
           $('.messages').append('<div class="message"><strong>' + message.author + '</strong>:' + message.message + '</div>')  
         };
 
+        socket.on('previousMessages', function(message)
+        {
+            for(message of message)
+            {
+                renderMessages(message);
+            };
+        });
+
         socket.on('receivedMessage', function(message) {
             renderMessages(message);
         });
@@ -48,7 +56,11 @@
 
                 renderMessages(messageObject);
 
-                socket.emit('sendMessage', message);
+                socket.emit('sendMessage', messageObject);
+
+                // var author = $('input[name=username]') = "";
+                // var message = $('input[name=message]') = "";
+                
             };
         });
     </script>
