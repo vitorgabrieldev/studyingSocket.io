@@ -35,6 +35,8 @@ button
     font-weight: bold;
     color: 3fff;
     margin-top: 10px;
+    border: none;
+    color: #fefefe;
 }
 
 .messages
