@@ -3,9 +3,9 @@
 
 #### App criado/desenvolvido para estudar funcionamento e estrutura de socket.io - web;
 
+##
 
-
-## Usado
+## Usado ---->
 
 | Socke.io - Web |
 |-|
@@ -24,3 +24,7 @@
 
 | Npm - Yarn |
 |-|
+
+# link
+
+[`Acessar site`](https://vitorgabrielgit.github.io/studyingSocket.io/)
